@@ -1,433 +1,156 @@
-/* =============================================
-   UNITED BIOMES OF THE OVERWORLD
-   Official Government Stylesheet
-   ============================================= */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>United Biomes of the Overworld</title>
+  <meta property="og:title" content="United Biomes of the Overworld" />
+  <meta property="og:description" content="Official Government Portal of the United Biomes of the Overworld" />
+  <meta property="og:image" content="https://rywnswn.github.io/United-Biomes-of-the-Overworld/seal.png" />
+  <meta property="og:url" content="https://rywnswn.github.io/United-Biomes-of-the-Overworld/" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
 
-:root {
-  --gov-blue: #1a4480;
-  --gov-blue-dark: #162e51;
-  --gov-blue-light: #d9e8f6;
-  --gov-red: #b50909;
-  --gov-gold: #c9a227;
-  --gov-green: #2e8540;
-  --gov-gray: #5b616b;
-  --gov-gray-light: #f1f1f1;
-  --gov-border: #dce4ef;
-  --white: #ffffff;
-  --text-dark: #1b1b1b;
-  --text-mid: #3d4551;
-  --alert-yellow: #faf3d1;
-  --alert-yellow-border: #e5a000;
-  --font-serif: 'Source Serif 4', Georgia, serif;
-  --font-sans: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
-}
+  <!-- TOP BANNER -->
+  <div class="top-banner">
+    <span>&#127987; An Official Website of the United Biomes of the Overworld</span>
+    <span class="banner-right">&#128274; Secure .ub.gov</span>
+  </div>
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <img src="seal.png" alt="United Biomes Seal" class="header-seal" />
+      <div class="header-text">
+        <div class="header-title">United Biomes of the Overworld</div>
+        <div class="header-subtitle">Official Government Portal</div>
+      </div>
+    </div>
+  </header>
 
-body {
-  font-family: var(--font-sans);
-  color: var(--text-dark);
-  background: var(--white);
-  font-size: 16px;
-  line-height: 1.6;
-}
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="government.html">Government</a>
+      <a href="embassy.html">Nether Embassy</a>
+      <a href="emergency.html">Citizen Emergency</a>
+      <a href="join.html">Join / Contact</a>
+    </div>
+  </nav>
 
-/* ---- TOP BANNER ---- */
-.top-banner {
-  background: var(--gov-blue-dark);
-  color: #c9d6e8;
-  font-size: 0.78rem;
-  padding: 6px 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: var(--font-sans);
-  letter-spacing: 0.02em;
-}
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <img src="seal.png" alt="United Biomes Seal" class="hero-seal" />
+      <h1>Welcome to the United Biomes of the Overworld</h1>
+      <p>Uniting all biomes under one sovereign nation. From the frozen tundra to the scorching desert, we stand as one.</p>
+    </div>
+  </section>
 
-.banner-right {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  color: #a8c0e0;
-}
+  <!-- ALERT BANNER -->
+  <div class="alert-bar">
+    <span class="alert-label">&#9888; NOTICE</span>
+    <span>The Nether Embassy is now operational. See the <a href="embassy.html">Nether Embassy page</a> for highway access info.</span>
+  </div>
 
-/* ---- HEADER ---- */
-header {
-  background: var(--gov-blue-dark);
-  border-bottom: 4px solid var(--gov-gold);
-  padding: 18px 24px;
-}
+  <!-- MAIN CONTENT -->
+  <main>
 
-.header-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
+    <!-- PRESIDENTIAL MESSAGE -->
+    <section class="card presidential-message">
+      <div class="card-header">
+        <span class="card-icon">&#127963;</span>
+        <h2>A Message from the President</h2>
+      </div>
+      <div class="card-body">
+        <p>Citizens of the United Biomes,</p>
+        <p>It is my honor to serve as your President and lead this great nation through prosperity, construction, and the occasional creeper attack. The United Biomes of the Overworld stands as a beacon of civilization in an otherwise chaotic world.</p>
+        <p>Together, we build. Together, we mine. Together, we survive.</p>
+        <p class="signature">-- President RywnSwn<br/><span>President of the United Biomes of the Overworld</span></p>
+      </div>
+    </section>
 
-.header-seal {
-  width: 72px;
-  height: 72px;
-  object-fit: contain;
-  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4));
-}
+    <!-- QUICK LINKS GRID -->
+    <section class="quick-links">
+      <h2 class="section-title">Government Services</h2>
+      <div class="links-grid">
 
-.header-title {
-  font-family: var(--font-serif);
-  font-size: 1.65rem;
-  font-weight: 700;
-  color: var(--white);
-  line-height: 1.2;
-  letter-spacing: 0.01em;
-}
+        <a href="embassy.html" class="link-card">
+          <div class="link-icon">&#128293;</div>
+          <div class="link-text">
+            <strong>Nether Embassy</strong>
+            <p>Highway access, embassy info, and diplomatic services for the Nether dimension.</p>
+          </div>
+          <span class="link-arrow">&#8594;</span>
+        </a>
 
-.header-subtitle {
-  font-size: 0.88rem;
-  color: #a8c0e0;
-  margin-top: 3px;
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
+        <a href="emergency.html" class="link-card">
+          <div class="link-icon">&#128680;</div>
+          <div class="link-text">
+            <strong>Citizen Emergency Help</strong>
+            <p>Creeper protocols, hostile mob alerts, and emergency survival guidance.</p>
+          </div>
+          <span class="link-arrow">&#8594;</span>
+        </a>
 
-/* ---- NAV ---- */
-nav {
-  background: var(--gov-blue);
-  border-bottom: 2px solid #0f2d57;
-}
+        <a href="government.html" class="link-card">
+          <div class="link-icon">&#127963;</div>
+          <div class="link-text">
+            <strong>Our Government</strong>
+            <p>Meet the President, cabinet members, and the structure of our great nation.</p>
+          </div>
+          <span class="link-arrow">&#8594;</span>
+        </a>
 
-.nav-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-}
+        <a href="join.html" class="link-card">
+          <div class="link-icon">&#128203;</div>
+          <div class="link-text">
+            <strong>Become a Citizen</strong>
+            <p>Apply for citizenship and join the United Biomes of the Overworld today.</p>
+          </div>
+          <span class="link-arrow">&#8594;</span>
+        </a>
 
-nav a {
-  color: #d9e8f6;
-  text-decoration: none;
-  padding: 13px 20px;
-  font-size: 0.92rem;
-  font-weight: 600;
-  transition: background 0.15s, color 0.15s;
-  display: block;
-  letter-spacing: 0.02em;
-}
+      </div>
+    </section>
 
-nav a:hover {
-  background: var(--gov-blue-dark);
-  color: var(--white);
-}
+    <!-- ABOUT BLURB -->
+    <section class="card about-blurb">
+      <div class="card-header">
+        <span class="card-icon">&#127758;</span>
+        <h2>About the United Biomes</h2>
+      </div>
+      <div class="card-body">
+        <p>The United Biomes of the Overworld is a sovereign Minecraft nation committed to the peaceful unification of all biomes under a single democratic government. Founded on the principles of freedom, fair resource distribution, and mutual defense against hostile mobs, the UBO continues to grow in both territory and population.</p>
+        <a href="about.html" class="learn-more">Learn more about our nation &#8594;</a>
+      </div>
+    </section>
 
-/* ---- HERO ---- */
-.hero {
-  background: linear-gradient(135deg, var(--gov-blue-dark) 0%, var(--gov-blue) 100%);
-  padding: 60px 24px;
-  text-align: center;
-  color: var(--white);
-  position: relative;
-  overflow: hidden;
-}
+  </main>
 
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 40px,
-    rgba(255,255,255,0.02) 40px,
-    rgba(255,255,255,0.02) 41px
-  );
-  pointer-events: none;
-}
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <img src="seal.png" alt="United Biomes Seal" class="footer-seal" />
+      <div class="footer-text">
+        <strong>United Biomes of the Overworld</strong>
+        <p>An official government website. Running on Minecraft Java Edition.</p>
+        <p class="footer-links">
+          <a href="about.html">About</a> &nbsp;|&nbsp;
+          <a href="join.html">Contact</a> &nbsp;|&nbsp;
+          <a href="emergency.html">Emergency Help</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; United Biomes of the Overworld. All biomes reserved.
+    </div>
+  </footer>
 
-.hero-inner {
-  max-width: 700px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.hero-seal {
-  width: 120px;
-  height: 120px;
-  object-fit: contain;
-  margin-bottom: 20px;
-  filter: drop-shadow(0 4px 16px rgba(0,0,0,0.5));
-}
-
-.hero h1 {
-  font-family: var(--font-serif);
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 1.25;
-  margin-bottom: 14px;
-  color: var(--white);
-}
-
-.hero p {
-  font-size: 1.05rem;
-  color: #c0d6f0;
-  max-width: 560px;
-  margin: 0 auto;
-}
-
-/* ---- ALERT BAR ---- */
-.alert-bar {
-  background: var(--alert-yellow);
-  border-left: 6px solid var(--alert-yellow-border);
-  padding: 14px 24px;
-  font-size: 0.92rem;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  max-width: 100%;
-}
-
-.alert-label {
-  font-weight: 700;
-  color: #7a4f00;
-  white-space: nowrap;
-  font-size: 0.82rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.alert-bar a {
-  color: var(--gov-blue);
-  font-weight: 600;
-  text-decoration: underline;
-}
-
-/* ---- MAIN ---- */
-main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 40px 24px 60px;
-  display: flex;
-  flex-direction: column;
-  gap: 36px;
-}
-
-/* ---- CARDS ---- */
-.card {
-  background: var(--white);
-  border: 1px solid var(--gov-border);
-  border-top: 4px solid var(--gov-blue);
-  padding: 28px 32px;
-}
-
-.card-header {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 18px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid var(--gov-border);
-}
-
-.card-icon {
-  font-size: 1.4rem;
-}
-
-.card-header h2 {
-  font-family: var(--font-serif);
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: var(--gov-blue-dark);
-}
-
-.card-body p {
-  color: var(--text-mid);
-  margin-bottom: 12px;
-  font-size: 0.97rem;
-}
-
-.card-body p:last-child {
-  margin-bottom: 0;
-}
-
-.signature {
-  margin-top: 18px !important;
-  font-weight: 700;
-  color: var(--text-dark) !important;
-  font-family: var(--font-serif);
-  font-size: 1rem !important;
-}
-
-.signature span {
-  font-weight: 400;
-  font-size: 0.85rem;
-  color: var(--gov-gray);
-  font-family: var(--font-sans);
-  display: block;
-  margin-top: 2px;
-}
-
-/* ---- QUICK LINKS ---- */
-.section-title {
-  font-family: var(--font-serif);
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--gov-blue-dark);
-  margin-bottom: 18px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid var(--gov-border);
-}
-
-.links-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 16px;
-}
-
-.link-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  padding: 20px;
-  border: 1px solid var(--gov-border);
-  border-left: 4px solid var(--gov-blue);
-  text-decoration: none;
-  color: inherit;
-  background: var(--white);
-  transition: background 0.15s, border-color 0.15s, box-shadow 0.15s;
-}
-
-.link-card:hover {
-  background: var(--gov-blue-light);
-  border-left-color: var(--gov-blue-dark);
-  box-shadow: 0 2px 8px rgba(26,68,128,0.1);
-}
-
-.link-icon {
-  font-size: 1.6rem;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-.link-text strong {
-  display: block;
-  font-size: 1rem;
-  color: var(--gov-blue);
-  margin-bottom: 4px;
-  font-weight: 700;
-}
-
-.link-text p {
-  font-size: 0.88rem;
-  color: var(--gov-gray);
-  line-height: 1.45;
-}
-
-.link-arrow {
-  margin-left: auto;
-  color: var(--gov-blue);
-  font-size: 1.1rem;
-  flex-shrink: 0;
-  align-self: center;
-}
-
-/* ---- ABOUT BLURB ---- */
-.learn-more {
-  display: inline-block;
-  margin-top: 14px;
-  color: var(--gov-blue);
-  font-weight: 600;
-  text-decoration: underline;
-  font-size: 0.95rem;
-}
-
-.learn-more:hover {
-  color: var(--gov-blue-dark);
-}
-
-/* ---- FOOTER ---- */
-footer {
-  background: var(--gov-blue-dark);
-  color: #a8c0e0;
-  border-top: 4px solid var(--gov-gold);
-  padding: 36px 24px 0;
-}
-
-.footer-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  padding-bottom: 28px;
-}
-
-.footer-seal {
-  width: 56px;
-  height: 56px;
-  object-fit: contain;
-  opacity: 0.85;
-  flex-shrink: 0;
-}
-
-.footer-text strong {
-  display: block;
-  color: var(--white);
-  font-size: 1rem;
-  margin-bottom: 6px;
-}
-
-.footer-text p {
-  font-size: 0.85rem;
-  margin-bottom: 4px;
-}
-
-.footer-links a {
-  color: #a8c0e0;
-  text-decoration: underline;
-  font-size: 0.85rem;
-}
-
-.footer-links a:hover {
-  color: var(--white);
-}
-
-.footer-bottom {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 14px 0;
-  border-top: 1px solid #2a4a7f;
-  font-size: 0.8rem;
-  color: #6a88b0;
-}
-
-/* ---- RESPONSIVE ---- */
-@media (max-width: 600px) {
-  .header-title {
-    font-size: 1.2rem;
-  }
-  .hero h1 {
-    font-size: 1.45rem;
-  }
-  .top-banner {
-    flex-direction: column;
-    gap: 4px;
-    text-align: center;
-  }
-  .links-grid {
-    grid-template-columns: 1fr;
-  }
-  .footer-inner {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  nav a {
-    padding: 10px 14px;
-    font-size: 0.85rem;
-  }
-}
+</body>
+</html>
