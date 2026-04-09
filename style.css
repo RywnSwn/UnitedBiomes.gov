@@ -1,8 +1,3 @@
-/* =============================================
-   UNITED BIOMES OF THE OVERWORLD
-   Official Government Stylesheet
-   ============================================= */
-
 :root {
   --gov-blue: #1a4480;
   --gov-blue-dark: #162e51;
@@ -695,6 +690,80 @@ nav a.nav-active {
 .tbd-box p {
   font-size: 0.87rem;
   color: var(--gov-gray);
+  margin: 0 !important;
+}
+
+/* ---- EMERGENCY PAGE ---- */
+.page-hero-red {
+  background: linear-gradient(135deg, #6b0000 0%, #b50909 100%);
+}
+
+.alert-red {
+  background: #fff0f0;
+  border-left-color: var(--gov-red);
+}
+
+.alert-red .alert-label {
+  color: #7a0000;
+}
+
+.card-red {
+  border-top-color: var(--gov-red);
+}
+
+.threat-badge {
+  margin-left: auto;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  border-radius: 2px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.badge-critical {
+  background: #b50909;
+  color: var(--white);
+}
+
+.badge-high {
+  background: #e5a000;
+  color: var(--white);
+}
+
+.badge-medium {
+  background: #1a4480;
+  color: var(--white);
+}
+
+.badge-low {
+  background: #2e8540;
+  color: var(--white);
+}
+
+.step-red {
+  background: var(--gov-red) !important;
+}
+
+.liability-box {
+  background: #fff0f0;
+  border-left: 4px solid var(--gov-red);
+  padding: 16px 18px;
+  margin: 16px 0;
+}
+
+.liability-box strong {
+  display: block;
+  color: #7a0000;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.liability-box p {
+  font-size: 0.87rem;
+  color: var(--text-mid);
   margin: 0 !important;
 }
 
