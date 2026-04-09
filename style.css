@@ -1,3 +1,8 @@
+/* =============================================
+   UNITED BIOMES OF THE OVERWORLD
+   Official Government Stylesheet
+   ============================================= */
+
 :root {
   --gov-blue: #1a4480;
   --gov-blue-dark: #162e51;
@@ -31,7 +36,7 @@ body {
   line-height: 1.6;
 }
 
-
+/* ---- TOP BANNER ---- */
 .top-banner {
   background: var(--gov-blue-dark);
   color: #c9d6e8;
@@ -51,7 +56,7 @@ body {
   color: #a8c0e0;
 }
 
-
+/* ---- HEADER ---- */
 header {
   background: var(--gov-blue-dark);
   border-bottom: 4px solid var(--gov-gold);
@@ -91,7 +96,7 @@ header {
   text-transform: uppercase;
 }
 
-
+/* ---- NAV ---- */
 nav {
   background: var(--gov-blue);
   border-bottom: 2px solid #0f2d57;
@@ -120,7 +125,7 @@ nav a:hover {
   color: var(--white);
 }
 
-
+/* ---- HERO ---- */
 .hero {
   background: linear-gradient(135deg, var(--gov-blue-dark) 0%, var(--gov-blue) 100%);
   padding: 60px 24px;
@@ -174,7 +179,7 @@ nav a:hover {
   margin: 0 auto;
 }
 
-
+/* ---- ALERT BAR ---- */
 .alert-bar {
   background: var(--alert-yellow);
   border-left: 6px solid var(--alert-yellow-border);
@@ -201,6 +206,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* ---- MAIN ---- */
 main {
   max-width: 1100px;
   margin: 0 auto;
@@ -210,7 +216,7 @@ main {
   gap: 36px;
 }
 
-
+/* ---- CARDS ---- */
 .card {
   background: var(--white);
   border: 1px solid var(--gov-border);
@@ -265,7 +271,7 @@ main {
   margin-top: 2px;
 }
 
-
+/* ---- QUICK LINKS ---- */
 .section-title {
   font-family: var(--font-serif);
   font-size: 1.4rem;
@@ -329,7 +335,7 @@ main {
   align-self: center;
 }
 
-
+/* ---- ABOUT BLURB ---- */
 .learn-more {
   display: inline-block;
   margin-top: 14px;
@@ -343,7 +349,7 @@ main {
   color: var(--gov-blue-dark);
 }
 
-
+/* ---- FOOTER ---- */
 footer {
   background: var(--gov-blue-dark);
   color: #a8c0e0;
@@ -399,14 +405,14 @@ footer {
   color: #6a88b0;
 }
 
-
+/* ---- NAV ACTIVE ---- */
 nav a.nav-active {
   background: var(--gov-blue-dark);
   color: var(--white);
   border-bottom: 3px solid var(--gov-gold);
 }
 
-
+/* ---- PAGE HERO ---- */
 .page-hero {
   background: var(--gov-blue-dark);
   border-bottom: 4px solid var(--gov-gold);
@@ -442,7 +448,7 @@ nav a.nav-active {
   font-size: 0.97rem;
 }
 
-
+/* ---- INFO BOX ---- */
 .info-box {
   display: flex;
   gap: 14px;
@@ -575,7 +581,124 @@ nav a.nav-active {
   color: #6a88b0;
 }
 
+/* ---- JOIN PAGE ---- */
+.subsection-title {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--gov-blue-dark);
+  margin: 22px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--gov-border);
+}
 
+.req-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.req-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px 16px;
+  background: var(--gov-gray-light);
+  border-left: 4px solid var(--gov-green);
+}
+
+.req-icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.req-list strong {
+  display: block;
+  color: var(--gov-blue-dark);
+  font-size: 0.95rem;
+  margin-bottom: 3px;
+}
+
+.req-list p {
+  font-size: 0.87rem;
+  color: var(--gov-gray);
+  margin: 0 !important;
+}
+
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--gov-border);
+  margin-bottom: 4px;
+}
+
+.process-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--gov-border);
+}
+
+.process-step:last-child {
+  border-bottom: none;
+}
+
+.step-number {
+  background: var(--gov-blue);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.9rem;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-family: var(--font-serif);
+}
+
+.step-info strong {
+  display: block;
+  color: var(--gov-blue-dark);
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.step-info p {
+  font-size: 0.87rem;
+  color: var(--gov-gray);
+  margin: 0 !important;
+}
+
+.tbd-box {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  background: var(--gov-gray-light);
+  border-left: 4px solid var(--gov-gray);
+  padding: 16px 18px;
+  margin-top: 16px;
+  font-size: 1.3rem;
+}
+
+.tbd-box strong {
+  display: block;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.tbd-box p {
+  font-size: 0.87rem;
+  color: var(--gov-gray);
+  margin: 0 !important;
+}
+
+/* ---- RESPONSIVE ---- */
 @media (max-width: 600px) {
   .header-title {
     font-size: 1.2rem;
